@@ -18,7 +18,7 @@ import subprocess
 
 from jujubigdata import utils
 from charmhelpers.core import hookenv
-from charmhelpers.core.host import service_start, service_stop
+from charmhelpers.core.host import service_restart
 from charmhelpers.core.hookenv import (
     open_port,
     status_set,
@@ -29,10 +29,6 @@ from charms.reactive import hook, when, when_not, set_state, remove_state
 @hook('upgrade-charm')
 def upgrade_charm():
     hookenv.log("Upgrading neo4j Charm")
-    try:
-        service_stop('neo4j')
-    except subprocess.CalledProcessError as exception:
-        hookenv.log(exception.output)
     remove_state('neo4j.configured')
 
 
@@ -44,7 +40,7 @@ def configure_neo4j():
     print("Configuring Neo4j")
     initial_config()
     install_python_deps()
-    service_start('neo4j')
+    service_restart('neo4j')
     open_port(7474)
     open_port(7687)
     status_set('active', 'Ready')
