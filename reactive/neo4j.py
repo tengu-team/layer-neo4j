@@ -46,7 +46,6 @@ def configure_neo4j():
     install_python_deps()
     service_start('neo4j')
     open_port(7474)
-    # open_port(7473)
     open_port(7687)
     status_set('active', 'Ready')
     set_state('neo4j.configured')
@@ -64,20 +63,8 @@ def install_python_driver():
 ##################
 def initial_config():
     utils.re_edit_in_place('/etc/neo4j/neo4j.conf', {
-        r'^#?dbms.connector.default_listen_address=([0-9].[0-9].[0-9].[0-9]|)$':
-            'dbms.connector.default_listen_address=0.0.0.0'
-    })
-    utils.re_edit_in_place('/etc/neo4j/neo4j.conf', {
-        r'^#?dbms.connector.http.listen_address=([0-9].[0-9].[0-9].[0-9]|):[0-9]+$':
-            'dbms.connector.http.listen_address=0.0.0.0:7474'
-    })
-    # utils.re_edit_in_place('/etc/neo4j/neo4j.conf', {
-    #     r'^#?dbms.connector.https.listen_address=([0-9].[0-9].[0-9].[0-9]|):[0-9]+$':
-    #         'dbms.connector.https.listen_address=0.0.0.0:7473'
-    # })
-    utils.re_edit_in_place('/etc/neo4j/neo4j.conf', {
-        r'^#?dbms.connector.bolt.listen_address=([0-9].[0-9].[0-9].[0-9]|):[0-9]+$':
-            'dbms.connector.bolt.listen_address=0.0.0.0:7687'
+        r'^#?dbms.connectors.default_listen_address=([0-9].[0-9].[0-9].[0-9]|)$':
+            'dbms.connectors.default_listen_address=0.0.0.0'
     })
 
 
