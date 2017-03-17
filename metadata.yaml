@@ -6,7 +6,4 @@ description: |
 tags:
   - database
 subordinate: false
-provides:
-  website:
-    interface: http
 series: ['xenial']

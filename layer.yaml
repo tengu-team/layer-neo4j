@@ -1,4 +1,4 @@
-includes: ['layer:apt', 'interface:http']
+includes: ['layer:basic', 'layer:apt']
 repo: git@github.com/tengu-team/layer-neo4j.git
 options:
   apt:
