@@ -1,14 +1,12 @@
 name: neo4j
 summary: Neo4j is a highly scalable native graph database.
-maintainer: Sebastien Pattyn <sebastien.pattyn@qrama.io>
+maintainer: Merlijn Sebrechts <merlijn.sebrechts@gmail.com>
 description: |
-  This charm deploys Neo4j. Neo4j is a highly scalable native graph database
-  that leverages data relationships as first-class entities, helping enterprises
-  build intelligent applications to meet today’s evolving data challenges.
+  This charm deploys Neo4j. Neo4j is a highly scalable native graph database that leverages data relationships as first-class entities, helping enterprises build intelligent applications to meet today’s evolving data challenges.
 tags:
   - database
 subordinate: false
 provides:
   website:
     interface: http
-series: ['trusty', 'xenial']
+series: ['xenial']
