@@ -138,9 +138,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.298145"
-     inkscape:cx="58.699025"
-     inkscape:cy="35.76504"
+     inkscape:zoom="8.1490725"
+     inkscape:cx="44.779684"
+     inkscape:cy="37.31831"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -148,9 +148,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="1280"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     inkscape:window-x="65"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      showborder="true"
@@ -185,7 +185,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -210,7 +210,7 @@
      style="display:inline">
     <g
        id="g4192"
-       transform="matrix(0.22129981,0,0,0.22129981,19.689282,15.936815)">
+       transform="matrix(0.19727033,0,0,0.19727033,23.861537,22.648002)">
       <path
          id="path4194"
          d="m 243.2893,131.52645 c 0,67.1871 -54.45755,121.64465 -121.64465,121.64465 C 54.45755,253.1711 0,198.71355 0,131.52645 0,64.339349 54.45755,9.8817985 121.64465,9.8817985 188.83175,9.8232558 243.2893,64.339349 243.2893,131.52645"
