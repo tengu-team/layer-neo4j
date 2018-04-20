@@ -13,7 +13,7 @@ You can then browse to http://ip-address:7474 to use the Neo4j browser.
 # Contact Information
 
 - [Neo4j](http://neo4j.com/) Website
-- [Issues](https://github.com/neo4j/neo4j/issues)
+- [Issues](https://github.com/tengu-team/layer-neo4j/issues)
 
 ## Authors
 
